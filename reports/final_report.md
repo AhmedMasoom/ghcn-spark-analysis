@@ -1,5 +1,5 @@
 # GHCN Data Analysis using Spark
-### DATA420-26S2 (C) — Assignment 1
+
 
 ---
 
