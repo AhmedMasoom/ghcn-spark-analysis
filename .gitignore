@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Environments & secrets
+.venv/
+venv/
+env/
+.env
+*.sas
+*.token
+
+# Spark / cluster artifacts (outputs live in cloud storage, never in git)
+outputs/
+spark-warehouse/
+metastore_db/
+derby.log
+*.log
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/

@@ -1,0 +1,24 @@
+# Runtime dependencies for local development and linting.
+# On the UC MADS Spark cluster, pyspark is provided by the environment; pin to
+# the cluster's version if running notebooks there. Install the package itself
+# in editable mode with:  pip install -e ".[geo,dev]"
+
+pyspark>=3.4,<4.0
+pandas>=2.0
+numpy>=1.24
+matplotlib>=3.7
+plotly>=5.18
+pycountry>=23.12
+
+# Geospatial (optional; choropleth country matching)
+geopandas>=0.14
+folium>=0.15
+mapclassify>=2.6
+
+# Notebook + dev tooling
+jupyter>=1.0
+ipykernel>=6.29
+nbformat>=5.9
+pytest>=8.0
+ruff>=0.4
+black>=24.0

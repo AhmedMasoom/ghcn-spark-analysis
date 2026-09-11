@@ -1,0 +1,19 @@
+# Example configuration. Copy to config/config.yaml (git-ignored) and adjust.
+# Secrets (the SAS token) live in the environment, NOT here — see .env.example.
+
+azure:
+  account_name: madsstorage002
+  data_container: campus-data      # read-only source data
+  user_container: campus-user      # personal output container
+  ghcnd_prefix: ghcnd
+
+spark:
+  # Early exploration (Processing Q1-Q2)
+  default:   { executor_instances: 2, executor_cores: 1, executor_memory_gb: 1, master_memory_gb: 1 }
+  # Heavier joins / full daily scans (Processing Q4, Analysis, Visualizations)
+  analysis:  { executor_instances: 4, executor_cores: 2, executor_memory_gb: 4, master_memory_gb: 4 }
+
+analysis:
+  active_year: 2026          # "active in 2026" questions
+  most_recent_daily_year: 2025
+  choropleth_year: 2025

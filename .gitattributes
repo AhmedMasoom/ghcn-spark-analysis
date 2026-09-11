@@ -1,0 +1,6 @@
+# Normalise line endings; treat notebooks & binaries appropriately
+* text=auto eol=lf
+*.png binary
+*.docx binary
+*.pdf binary
+*.ipynb text eol=lf
