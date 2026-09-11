@@ -11,8 +11,7 @@ climate summaries (**~3.19 billion rows**) from Azure Blob Storage over `wasbs:/
 station metadata, answers a set of station- and observation-level questions, and produces
 time-series and geospatial visualisations - collecting only small aggregated results to the driver.
 
-> Coursework for **DATA420-26S2 (C) - Scalable Data Science** (University of Canterbury),
-> refactored into a reusable, tested Python package with a single authoritative analysis notebook.
+
 
 ---
 
