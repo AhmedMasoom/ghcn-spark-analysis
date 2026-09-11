@@ -5,7 +5,7 @@
 
 ## Background
 
-This assignment uses the **Global Historical Climatology Network – Daily (GHCN-Daily)** dataset to build a distributed data pipeline in Spark. GHCN-Daily is a collection of daily land-surface climate summaries maintained by NOAA, assembled from more than twenty independent sources that have each passed quality-assurance review. It reaches back over 250 years and covers more than 100,000 stations across roughly 200 countries and territories.
+This project uses the **Global Historical Climatology Network – Daily (GHCN-Daily)** dataset to build a distributed data pipeline in Spark. GHCN-Daily is a collection of daily land-surface climate summaries maintained by NOAA, assembled from more than twenty independent sources that have each passed quality-assurance review. It reaches back over 250 years and covers more than 100,000 stations across roughly 200 countries and territories.
 
 The data comes in two parts. The **daily** climate summaries are comma-separated files, one per year, where each row records one observation for one station, on one day, for one element — maximum and minimum temperature, precipitation, snowfall, snow depth and many others — so a single station-day usually spans several rows. Supporting these are four fixed-width **metadata** tables: **stations** (coordinates, elevation, country and state codes, network flags), **countries** and **states** (codes and names), and **inventory** (which elements each station recorded, and the first and last year for each).
 
